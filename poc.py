@@ -81,8 +81,8 @@ def payload(userip: str, webport: int, lport: int) -> None:
 def check_java():
     exit_code = subprocess.call([
         os.path.join(current_folder, 'jdk1.8.0_20/bin/java'),
-        '-version',
-    ], stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
+            '-version',
+            ], stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
     return exit_code == 0
 
 

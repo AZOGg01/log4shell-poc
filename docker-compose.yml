@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  webapp:
+    container_name: "vuln_webapp"
+    image: "log4j-shell-poc"
+    network_mode: "host"
+
+  suricata:
+    container_name: "suricata"
+    image: "jasonish/suricata"
